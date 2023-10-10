@@ -1,0 +1,39 @@
+.navbar{
+  position: fixed;
+  width: 100%;  
+  background-color: #7ce3eaf8;
+  color: #FFF;
+  height: 60px;
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 2px solid white; 
+}
+
+.logonav{
+  width: 85px; 
+  height: 85px;
+  object-fit: contain; 
+  animation: rotate 5s linear infinite; 
+}
+
+/* @keyframes rotate {
+  from {
+    transform: rotate(0deg); 
+  }
+  to {
+    transform: rotate(360deg);
+  }
+} */
+
+.logout{
+  display: inline-block;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  border-radius: 0.5rem;
+  background-color: #dd1c1a;
+  color: #ffffff;
+}

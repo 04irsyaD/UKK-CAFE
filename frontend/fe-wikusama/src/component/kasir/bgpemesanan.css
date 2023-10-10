@@ -1,0 +1,25 @@
+.backgroundd{
+    
+    background-size: cover;
+    background-position: center;
+    padding: 20px;
+    background-attachment: fixed;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.gambar{
+    max-width: 20rem; 
+    background-color: #8bdbbb;
+    border: 1px solid  #8bdbbb;
+    border-radius: 0.5rem;
+    box-shadow: 0 3px 5px 0 rgba(0, 0, 0, 0.10);
+}
+.checkout{
+    display: flex;
+    height: 100%;
+    flex-direction: column;
+    overflow-y: auto;
+    background-color: white; /* Replace #34d399 with the desired shade of green */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); 
+}
+

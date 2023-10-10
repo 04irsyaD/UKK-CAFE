@@ -1,0 +1,66 @@
+ .background {
+     background-image: url("image.jpeg");
+     background-size: cover;
+     background-position: center;
+     padding: 20px;
+     background-attachment: fixed;
+     background-color: rgba(0, 0, 0, 0.5);
+ }
+
+ .borderlogin {
+     width: 100%;
+     border-radius: 0.5rem;
+     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), 0 2px 4px rgba(0, 0, 0, 0.06);
+     position: fixed;
+     border-width: 3px;
+     border-style: solid;
+     margin-top: 0;
+     max-width: 28rem;
+     background-color: white;
+     border-color: rgba(0, 128, 0, 0.2);
+ }
+
+ /* Gaya teks */
+ .text {
+     font-size: 1.25rem;
+     font-weight: bold;
+     text-align: center;
+     line-height: 1.25;
+     letter-spacing: -0.025rem;
+     color: #00ff00;
+     animation: fadeInOut 4s ease-in-out infinite, zoomColorChange 8s linear infinite;
+ }
+
+ /* Animasi muncul-hilang (fade in-fade out) */
+ @keyframes fadeInOut {
+
+     0%,
+     100% {
+         opacity: 0;
+         /* Mulai dan akhir animasi dengan opacity 0 (teks menghilang) */
+     }
+
+     50% {
+         opacity: 1;
+         /* Puncak animasi, teks penuh terlihat (opacity 1) */
+     }
+ }
+
+ /* Animasi zoom dan pergantian warna */
+ @keyframes zoomColorChange {
+
+     0%,
+     100% {
+         transform: scale(1);
+         /* Tidak ada perubahan skala pada 0% dan 100% */
+         color: #ff6600;
+         /* Warna menjadi oranye pada 0% dan 100% */
+     }
+
+     50% {
+         transform: scale(1.2);
+         /* Puncak animasi, teks diperbesar menjadi 1.2 kali skala aslinya */
+         color: #00ff00;
+         /* Kembali ke warna asli pada 50% */
+     }
+ }
